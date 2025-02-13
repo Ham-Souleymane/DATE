@@ -1,78 +1,65 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
     height: 100vh;
-    background: linear-gradient(135deg, #2b1055 , #ff3f81 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Arial', sans-serif;
-}
+background-color: #001845;
+display: flex;
+justify-content: center;
+align-items: center;
 
-.continer {
+}
+.continer{
     min-width: 450px;
     height: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    background-color: #023e7d;
+    border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+position: relative;
+}
+.continer h1{
+    margin: 50px 0px ;
 }
 
-.continer h1 {
-    margin: 50px 0px;
-    color: #fff;
-    font-size: 1.8rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-button {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+button{
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    border:none;
+    width: 60px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #d9d9d9; 
     position: absolute;
+    
 }
-
-#yes {
-    left: 110px;
-    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-    color: white;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-}
-
-#yes:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
-}
-
-#no {
+#no{
+   
     right: 100px;
-    background: linear-gradient(45deg, #a8a8a8, #d3d3d3);
-    color: #4a4a4a;
 }
+#yes{
+left:  110px;
+} 
 
+.continer h1.message {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+/* Add to your CSS */
 .heart {
     position: relative;
     width: 100px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 20px;
     animation: heartbeat 1.2s infinite;
-    filter: drop-shadow(0 0 10px rgba(255, 63, 129, 0.5));
 }
 
 .heart::before,
@@ -81,11 +68,9 @@ button {
     position: absolute;
     width: 50px;
     height: 80px;
-    background: linear-gradient(45deg, #ff3f81, #ff6b6b);
+    background-color: #ff3f3f;
     border-radius: 50px 50px 0 0;
 }
-
-
 
 .heart::before {
     left: 50px;
@@ -110,4 +95,12 @@ button {
 
 .romantic-mode {
     padding: 40px 20px;
+}
+@media (max-width:768px){
+    .continer{
+        width: 200px;
+    }
+    .heart{
+        top: -50px;
+    }
 }
