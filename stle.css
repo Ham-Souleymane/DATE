@@ -96,3 +96,11 @@ left:  110px;
 .romantic-mode {
     padding: 40px 20px;
 }
+@media (max-width:768px){
+    .continer{
+        width: 200px;
+    }
+    .heart{
+        top: -50px;
+    }
+}
