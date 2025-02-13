@@ -1,7 +1,7 @@
 const noBtn= document.querySelector('#no');
 const continer=document.querySelector('.continer')
 
-noBtn.addEventListener('click', move);
+noBtn.addEventListener('mouseenter', move);
 function move(){
     console.log('hello')
 const maxX= continer.offsetWidth-noBtn.offsetWidth;
